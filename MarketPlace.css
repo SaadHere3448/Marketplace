@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{                             
+    --Primary-text-size:90px;      
+    --Secondary-text-size:30px;    
+    --text-size:19px;              
+    --background-color-greeny:black , green;
+    --background-color-cyanic:Cyan , blue;
+    --Primary-font-style:monospace;  
+    --Secondary-font-style:fantasy;  
+    --text-style:cursive;            
+    --Primary-position:center;
+    --Secondary-position:center;
+    --text-color-1:white;
+    --text-color-2:rgb(4, 0, 216);
+    --text-color-3:rgb(53, 6, 85);
+    --margin-big:30px;
+    --margin-small:20px;
+    --padding-big:30px;
+    --padding-small:20px;
+    --line-height-for-everyone:1.4rem;
+    --No-Here: None;
+}
+body{
+    font-family: var(--Primary-font-style);
+    color: var(--text-color-3);
+    font-size: var(--text-size);
+    background: linear-gradient(to right , Cyan ,rgb(131, 188, 211));
+}
+p{
+    color: var(--text-color-2);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: var(--line-height-for-everyone);
+}
+a{
+    text-decoration: var(--No-Here);
+}
+ul{
+    list-style: var(--No-Here);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background: linear-gradient(to left , Cyan ,rgb(131, 188, 211));
+    box-sizing: 0 0 4px gray;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img{
+    width: 120px;
+    height: 50px;
+}
+.nav-links ul{
+    gap: 100px;
+}
+.hover-links{
+    cursor: pointer;
+}
+.hover-links:hover{
+    color: var(--text-color-2);
+}
+.hover-links:active{
+    color: black;
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 30px;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #004db1;
+    font-family: var(--Primary-font-style);
+    font-size: 20px;
+}
+.search-button{
+    background-color: #004db1;
+    padding: 4px;
+    color: white;
+    font-size: 18px;
+    font-family: var(--Primary-font-style);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color: rgb(43, 183, 230);
+}
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.cards{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4 #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+.cards:hover{
+    box-shadow: 1px , 1px , 8px , #d4ecff;
+    background-color: #dce4eb;
+    transform:translate(-2px);
+}
+.cards-header img{
+    overflow: hidden;
+    width: 366px;
+    height: 300px;
+}
+.cards-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+}
+.hidden{
+    display: none;
+}
